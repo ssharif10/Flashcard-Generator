@@ -24,7 +24,7 @@ inquirer.prompt([
 //creates new BasicCard object with front and back inputs
 var flashCard = new BasicCard(inputs.front, inputs.back);
 //console.log(flashCard);
-//BasicCards.push(flashCard);
+
 var newFlashCard = JSON.stringify(flashCard, null, 2);
 fs.appendFile("./basic.json", newFlashCard);
 

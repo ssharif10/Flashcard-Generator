@@ -8,9 +8,10 @@ function ClozeCard(text, cloze) {
 }
 
 ClozeCard.prototype.showPartial = function () {
- 	var full = this.text;
-    var partial = full.replace(this.cloze, "...")
-    console.log(partial);
-
+   var full = this.text;
+   var partial = full.replace(this.cloze, "...");
+   console.log(partial);
 }
+
+
 module.exports = ClozeCard;
